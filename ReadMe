@@ -1,54 +1,251 @@
-# PRIVACY POLICY for MY LIBRARY APP
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | My Library App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --secondary: #64748b;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+        }
 
-**Last Updated:** March 15, 2026
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-## 1. Introduction & Scope
-This Privacy Policy explains how "My Library App" (the "Application"), developed by **Mannu Yadav** ("we", "us", "our"), collects, uses, and protects your information. This Application is designed for both **Library Owners** and **Students** (the "Users"). By using the Application, you agree to the collection and use of information in accordance with this policy.
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
 
-## 2. Information Collection and Use
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
 
-### A. Personal Data
-While using our Application, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:
-*   **Account Information**: Full Name, Email address, Phone number, and Profile Picture.
-*   **Library Management Data**: For Owners, we store library details, seat configurations, and business rules.
-*   **Student Activity Data**: For Students, we store study goals, notes, and profile details.
+        header {
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+        }
 
-### B. Permissions & Device Data (Crucial for Functionality)
-The Application requires specific device permissions to operate its core features:
-*   **📍 Location Data (Geofencing)**: Used **EXCLUSIVELY** for the "Smart Attendance" feature. 
-    *   *Purpose*: To verify that a student is physically present within the library premises for check-in.
-    *   *Storage*: We store check-in/check-out timestamps and coordinates to provide attendance history reports. We do **not** track your location in the background or outside of library hours.
-*   **📷 Camera Access**: Used **EXCLUSIVELY** for scanning QR codes for quick check-in/out. No video or images are recorded or stored from the camera feed.
-*   **📂 Storage/Gallery**: Accessed only when you manually choose to upload a profile picture or a payment receipt.
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
+        }
 
-## 3. How We Use Data
-*   **To provide and maintain the Service**: Managing subscriptions, seat availability, and study tracking.
-*   **To notify you about changes**: Important announcements (e.g., library closures).
-*   **Gamification**: Calculating "Study Hours", "XP", and "Leaderboard Ranks".
-*   **Customer Support**: Resolving technical issues.
+        .last-updated {
+            color: var(--secondary);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
 
-## 4. Data Sharing & Disclosure
-*   **Third-Party Selling**: We do **NOT** sell, rent, or trade your personal data to third-party advertisers.
-*   **Library Owners**: If you are a Student, your assigned Library Owner has access to your attendance logs and payment status as part of the library management service.
-*   **Service Providers**: We use **Supabase** (PostgreSQL/Cloud Hosting) to store and secure data. They are bound by data protection agreements.
-*   **Legal Compliance**: We may disclose data if required to do so by law.
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+        }
 
-## 5. Data Security
-The security of your data is important to us. We implement:
-*   **Encryption**: All data in transit is encrypted via SSL/TLS.
-*   **Row-Level Security (RLS)**: Strict database rules ensure Users can only access data they are authorized to see.
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 1.5rem;
+            background-color: var(--primary);
+            margin-right: 0.75rem;
+            border-radius: 2px;
+        }
 
-## 6. Retention & Deletion
-We retain data only as long as necessary for the purposes set out in this policy.
-*   **Account Deletion**: Users can request account deletion by contacting the developer or their Library Owner. Upon deletion, personal data is permanently removed from our active databases.
+        h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+        }
 
-## 7. Children's Privacy
-Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-muted);
+        }
 
-## 8. Changes to This Policy
-We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+        ul {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
 
-## 9. Contact Us
-For questions regarding this policy:
-*   **Developer**: Mannu Yadav
-*   **Email**: businessofwisdom.official@gmail.com
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--text-muted);
+        }
+
+        strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--primary);
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--secondary);
+        }
+
+        .contact-info {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">My Library App • Last Updated: March 15, 2026</p>
+        </header>
+
+        <section>
+            <h2>1. Introduction & Scope</h2>
+            <p>This Privacy Policy explains how "My Library App" (the "Application"), developed by <strong>Mannu Yadav</strong> ("we", "us", "our"), collects, uses, and protects your information. This Application is designed for both <strong>Library Owners</strong> and <strong>Students</strong> (the "Users"). By using the Application, you agree to the collection and use of information in accordance with this policy.</p>
+        </section>
+
+        <section>
+            <h2>2. Information Collection and Use</h2>
+            <h3>A. Personal Data</h3>
+            <p>While using our Application, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:</p>
+            <ul>
+                <li><strong>Account Information</strong>: Full Name, Email address, Phone number, and Profile Picture.</li>
+                <li><strong>Library Management Data</strong>: For Owners, we store library details, seat configurations, and business rules.</li>
+                <li><strong>Student Activity Data</strong>: For Students, we store study goals, notes, and profile details.</li>
+            </ul>
+
+            <h3>B. Permissions & Device Data</h3>
+            <div class="highlight-box">
+                <p><strong>Crucial for Functionality:</strong> The Application requires specific device permissions to operate its core features.</p>
+            </div>
+            <ul>
+                <li><strong>📍 Location Data (Geofencing)</strong>: Used <strong>EXCLUSIVELY</strong> for the "Smart Attendance" feature. 
+                    <ul>
+                        <li><em>Purpose</em>: To verify that a student is physically present within the library premises for check-in.</li>
+                        <li><em>Storage</em>: We store check-in/check-out timestamps and coordinates to provide attendance history reports. We do <strong>not</strong> track your location in the background or outside of library hours.</li>
+                    </ul>
+                </li>
+                <li><strong>📷 Camera Access</strong>: Used <strong>EXCLUSIVELY</strong> for scanning QR codes for quick check-in/out. No video or images are recorded or stored from the camera feed.</li>
+                <li><strong>📂 Storage/Gallery</strong>: Accessed only when you manually choose to upload a profile picture or a payment receipt.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. How We Use Data</h2>
+            <ul>
+                <li><strong>To provide and maintain the Service</strong>: Managing subscriptions, seat availability, and study tracking.</li>
+                <li><strong>To notify you about changes</strong>: Important announcements (e.g., library closures).</li>
+                <li><strong>Gamification</strong>: Calculating "Study Hours", "XP", and "Leaderboard Ranks".</li>
+                <li><strong>Customer Support</strong>: Resolving technical issues.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Data Sharing & Disclosure</h2>
+            <ul>
+                <li><strong>Third-Party Selling</strong>: We do <strong>NOT</strong> sell, rent, or trade your personal data to third-party advertisers.</li>
+                <li><strong>Library Owners</strong>: If you are a Student, your assigned Library Owner has access to your attendance logs and payment status as part of the library management service.</li>
+                <li><strong>Service Providers</strong>: We use <strong>Supabase</strong> (PostgreSQL/Cloud Hosting) to store and secure data. They are bound by data protection agreements.</li>
+                <li><strong>Legal Compliance</strong>: We may disclose data if required to do so by law.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Data Security</h2>
+            <p>The security of your data is important to us. We implement:</p>
+            <ul>
+                <li><strong>Encryption</strong>: All data in transit is encrypted via SSL/TLS.</li>
+                <li><strong>Row-Level Security (RLS)</strong>: Strict database rules ensure Users can only access data they are authorized to see.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Retention & Deletion</h2>
+            <p>We retain data only as long as necessary for the purposes set out in this policy. Users can request account deletion by contacting the developer or their Library Owner. Upon deletion, personal data is permanently removed from our active databases.</p>
+        </section>
+
+        <section>
+            <h2>7. Children's Privacy</h2>
+            <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
+        </section>
+
+        <section>
+            <h2>8. Changes to This Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+        </section>
+
+        <section>
+            <h2>9. Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Developer:</strong> Mannu Yadav</p>
+                <p><strong>Email:</strong> businessofwisdom.official@gmail.com</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 My Library App. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
