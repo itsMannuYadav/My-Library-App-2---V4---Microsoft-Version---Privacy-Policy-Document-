@@ -1,0 +1,54 @@
+# PRIVACY POLICY for MY LIBRARY APP
+
+**Last Updated:** March 15, 2026
+
+## 1. Introduction & Scope
+This Privacy Policy explains how "My Library App" (the "Application"), developed by **Mannu Yadav** ("we", "us", "our"), collects, uses, and protects your information. This Application is designed for both **Library Owners** and **Students** (the "Users"). By using the Application, you agree to the collection and use of information in accordance with this policy.
+
+## 2. Information Collection and Use
+
+### A. Personal Data
+While using our Application, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:
+*   **Account Information**: Full Name, Email address, Phone number, and Profile Picture.
+*   **Library Management Data**: For Owners, we store library details, seat configurations, and business rules.
+*   **Student Activity Data**: For Students, we store study goals, notes, and profile details.
+
+### B. Permissions & Device Data (Crucial for Functionality)
+The Application requires specific device permissions to operate its core features:
+*   **📍 Location Data (Geofencing)**: Used **EXCLUSIVELY** for the "Smart Attendance" feature. 
+    *   *Purpose*: To verify that a student is physically present within the library premises for check-in.
+    *   *Storage*: We store check-in/check-out timestamps and coordinates to provide attendance history reports. We do **not** track your location in the background or outside of library hours.
+*   **📷 Camera Access**: Used **EXCLUSIVELY** for scanning QR codes for quick check-in/out. No video or images are recorded or stored from the camera feed.
+*   **📂 Storage/Gallery**: Accessed only when you manually choose to upload a profile picture or a payment receipt.
+
+## 3. How We Use Data
+*   **To provide and maintain the Service**: Managing subscriptions, seat availability, and study tracking.
+*   **To notify you about changes**: Important announcements (e.g., library closures).
+*   **Gamification**: Calculating "Study Hours", "XP", and "Leaderboard Ranks".
+*   **Customer Support**: Resolving technical issues.
+
+## 4. Data Sharing & Disclosure
+*   **Third-Party Selling**: We do **NOT** sell, rent, or trade your personal data to third-party advertisers.
+*   **Library Owners**: If you are a Student, your assigned Library Owner has access to your attendance logs and payment status as part of the library management service.
+*   **Service Providers**: We use **Supabase** (PostgreSQL/Cloud Hosting) to store and secure data. They are bound by data protection agreements.
+*   **Legal Compliance**: We may disclose data if required to do so by law.
+
+## 5. Data Security
+The security of your data is important to us. We implement:
+*   **Encryption**: All data in transit is encrypted via SSL/TLS.
+*   **Row-Level Security (RLS)**: Strict database rules ensure Users can only access data they are authorized to see.
+
+## 6. Retention & Deletion
+We retain data only as long as necessary for the purposes set out in this policy.
+*   **Account Deletion**: Users can request account deletion by contacting the developer or their Library Owner. Upon deletion, personal data is permanently removed from our active databases.
+
+## 7. Children's Privacy
+Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.
+
+## 8. Changes to This Policy
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+
+## 9. Contact Us
+For questions regarding this policy:
+*   **Developer**: Mannu Yadav
+*   **Email**: businessofwisdom.official@gmail.com
